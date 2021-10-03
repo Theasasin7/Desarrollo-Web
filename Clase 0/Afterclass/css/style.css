@@ -1,0 +1,26 @@
+body {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #d50000;
+}
+
+#top {
+
+    background-color: black;
+    background-size: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    border-style: solid;
+    border-color: #fc8400;
+    font-size: 50px;
+    color: #d50000;
+}
+
+#team {
+    font-size: 30px;
+}
