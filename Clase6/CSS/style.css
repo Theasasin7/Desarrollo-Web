@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+article, aside {
+    background-color: cyan;
+}
+
+header {
+    background-color: #808080;
+    height: 200px;
+}
+
+footer{
+    background-color: #808080;
+    height: 600px;
+}
+
+article,nav,aside,header,footer {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.padre-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cleanList {
+    list-style: none;
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+header ul a {
+    color: black;
+    text-decoration: none;
+    background-color: #686868;
+    font-size: 24px;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+.nav-flex {
+    text-align: right;
+}

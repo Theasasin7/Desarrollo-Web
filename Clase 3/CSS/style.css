@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "October_Crow";
+    src: url(October_Crow.ttf) format("truetype");
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.font {
+    font-family: October_Crow;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Phasmophobia</title><link nes rel="icon" sizes="192x192" href="../1erPreentrega/images/phasmo-title.png" /><link nes rel="icon" sizes="128x128" href="./images/phasmo-title.png"/>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <section>
+            <a href="index.html"><img src="./images/phasmo-title.png"></a>
+            <nav class="menu">
+                <ul class="cleanList">
+                    <li><a href="/Desafio/index.html">Home</a></li>
+                    <li><a href="/Desafio/sections/ghosts.html">Ghosts</a></li>
+                    <li><a href="/Desafio/sections/evidence.html">Evidence</a></li>
+                    <li><a href="/Desafio/sections/equipment.html">Equipment</a></li>
+                    <li><a href="/Desafio/sections/maps.html">Maps</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+<hr>
+    <main>
+        <!-- Intro -->
+        <section class="phasmoIntro">
+        <span class="phasmoFont"><h1>Phasmophobia</h1></span>
+        <p class="phasmoDescription"><strong>Phasmophobia</strong> is an indie 4 co-op psychological horror game developed by <strong><em>Kinetic
+        Games</em></strong>.<br> Paranormal activity
+        is on the rise and it is up to your team to investigate and end the
+        nightmare.<br>Experience thrilling moments of gameplay as you interact with the ghosts, spirits, and other
+        paranormal phenomena.<br>
+        Support your team by monitoring the location with CCTV cameras and motion sensors from the safety of the van,<br> or
+        head inside and get your hands dirty with the ghostly
+        activity that will get increasingly hostile as time goes on.</p>
+        </section>
+<hr>
+        <!-- Video -->
+        <section class="phasmoVideo textCenter">
+            <span><p>Preview of the game!</p></span><video
+                src="https://cdn.akamai.steamstatic.com/steam/apps/256776660/movie480.webm?t=1583525286" controls
+                preload="auto"></video>
+        </section>
+<hr>
+        <!-- Small description of a few equipments. -->
+        <div class="textCenter">
+            <h2>Equipment</h2><img src="images/computer-view.jpg" width="390"> <img src="images/equipments.jpg" width="390">
+            <p><h3>Some equipment and functions</h3></p>
+            <ul class="cleanList">
+                <li>Ouija Board - You ask questions to know more about the ghost you are hunting.</li>
+                <li>UV Flashlight - Is used to see if there are any fingerprints left by the ghost.</li>
+                <li>EMF Reader - It tells when you are close to the ghost or use it as evidence when it reaches 5.</li>
+                <li>Spirit Box - Used as evidence if the ghost answers back after asking a question.</li>
+            </ul>
+            <!-- Inseguro de usar tablas -->
+            <!--<table>
+                <tr>
+                    <th>
+                        <p>Equipment</p>
+                    </th>
+                    <th>
+                        <p>Function</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>Ouija Board</td>
+                    <td>You ask questions to know more about<br>the ghost you are hunting.</td>
+                </tr>
+                <tr>
+                    <td>UV Flashlight</td>
+                    <td>Is used to see if there are any fingerprints<br> left by the ghost.</td>
+                </tr>
+                <tr>
+                    <td>EMF Reader</td>
+                    <td>It tells when you are close to the ghost<br> or use it as evidence when it reaches 5.</td>
+                </tr>
+                <tr>
+                    <td>Spirit Box</td>
+                    <td>Used as evidence if the ghost answers back<br> after asking a question.</td>
+                </tr>
+            </table>-->
+            <p>Either be the <em>"guy in the chair"</em> watching player placed cameras or be in the house getting your hands
+            dirty with even more equipment.</p>
+        </div>
+<hr>
+        <!-- Form to subscribe. -->
+        <section class="newsForm">
+            <form action="database.php" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>Subscribe to receive news.</legend>
+                    <p><label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                    </p>
+                    <p><label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </p>
+                    <p><select name="age">
+                            <option value="confirm">Are you 17+?</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                    </p>
+                    </select>
+                    <p><input type="checkbox" name="accept" value="1">I agree to terms and conditions.</p>
+                    <input type="submit" value="Send info">
+                    <input type="reset" value="Clear info">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+<hr>
+    <!-- Footer -->
+    <footer>
+        <section class="textCenter">
+            <span><h2>Kinetic Games.</h2></span>
+                <p><strong>Kinetic Games</strong> is the company that created <strong>Phasmophobia.</strong></p>
+                    <ul class="cleanList">
+                        <li>
+                            <a href="https://discord.gg/phasmophobia" target="_newblank"><img src="./images/ds_logo.jpg" width="32"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/KineticGame" target="_newblank"><img src="./images/tw_logo.jpg" width="32"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCEyR7e-25KW9-oNv_CY8CSw" target="_newblank"><img src="./images/yt_logo.jpg" width="32"></a>
+                        </li>
+                        <li>
+                            <a href="http://store.steampowered.com/app/739630/Phasmophobia" target="_newblank"><img src="./images/sm_logo.jpg" width="32"></a>
+                        </li>
+                    </ul>
+        </section>
+    </footer>
+</body>
+</html>
