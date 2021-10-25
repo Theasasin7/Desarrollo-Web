@@ -3,10 +3,32 @@
     src: url(October_Crow.ttf) format("truetype");
 }
 
-/*Lists-------------------------------------------------------------------------------------*/
-.cleanList {
-    text-decoration: none;
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
     list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*Lists-------------------------------------------------------------------------------------*/
+header img {
+    padding: 0.5rem;
+}
+
+header li {
+    display: inline-block;
+    text-align: center;
+    width: 16%;
+    position:relative;
+    font-size: 1rem;
+    color: black;
+}    
+
+ul li a:hover {
+    color: white;
+    padding: 0.1rem;
 }
 
 /*Header------------------------------------------------------------------------------------*/
@@ -17,7 +39,24 @@ header {
 header ul a{
     color: #f7f7f7ec;
     background-color: #808080;
-    font-size: 24px;
+    font-size: 1.5rem;
+}
+
+header ul ul {
+    position: absolute;
+    display: none;
+}
+
+header ul ul li {
+    display: block;
+    width: 100%;
+    background-color: #808080;
+    padding:0 6.5em;
+    border: 1px solid white;
+}
+
+header ul li:hover ul {
+    display: block;
 }
 
 /*Body--------------------------------------------------------------------------------------*/
@@ -25,17 +64,12 @@ body {
     background-color: black;
     color: #f7f7f7ec;
     font-family: 'Courier New', Courier, monospace;
-}
-
-.phasmoIntro {
-    background-color: #808080;
-    padding: 5px;
-    margin: 5px;
+    margin:0 2rem 1rem;
 }
 
 .phasmoDescription {
     text-align: center;
-    line-height: 25px;
+    line-height: 1.5em;
 }
 
 body p{
@@ -46,15 +80,22 @@ body p{
 .phasmoVideo {
     width: 860px;
     background-color: #808080;
+    margin: 0 25vw;
 }
 
 /*Title-------------------------------------------------------------------------------------*/
-.phasmoFont {
+h1 {
     font-family: October_Crow;
     color: #ffffff;
-    font-size: 40px;
-    letter-spacing: 30px;
+    font-size: 3rem;
+    letter-spacing: 0.65em;
     text-align: center;
+}
+
+.sizeDescription {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin:0 calc(25vw - 100px) ;
 }
 
 /*Table of description of equipments--------------------------------------------------------*/
@@ -71,11 +112,10 @@ table tr td {
 /*Form----------------------------------------------------------------------------------*/
 form {
     background-color: #808080;
-    color: #f7f7f7ec;
+    color: black;
 }
 
 .newsForm {
-    width: 300px;
     text-align: center;
 }
 

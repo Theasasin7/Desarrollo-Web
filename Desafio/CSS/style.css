@@ -3,6 +3,15 @@
     src: url(October_Crow.ttf) format("truetype");
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
 /*Lists-------------------------------------------------------------------------------------*/
 .cleanList {
     text-decoration: none;

@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap");
+
+:root {
+    --clr-black: #0e0e0e;
+    --clr-white: #fafafa;
+    --clr-dark-gray: #252424;
+    --clr-light-gray: #e2e6eb;
+    --clr-primary: #4cdbdb;
+    --font-heading: "Roboto Condense", sans-serif;
+    --font-body: "Roboto", sans-serif;
+    --br-75: 0.75em;
+}
+
+/* RESETEO */
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* FIX PARA IMAGENES */
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* ---TEXTO GENERAL--- */
+h1, h2, h3 {
+    color: var(--clr-primary);
+    font-family: var(--font-heading);
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p, a, input, select, textarea, button {
+    font-size: 1rem;
+    font-family: var(--font-body);
+}
+
+/* ---ESTILOS ESPECIALES DE TEXTO--- */
+span.highlight-primary {
+    color: var(--clr-primary);
+    font-weight: 700;
+}
+
+span.bolder, span.brand {
+    font-weight: 700;
+}
+
+.logo {
+    font-size: 2.75rem;
+    text-transform: uppercase;
+}
+
+.tooltip {
+    color:var(--clr-dark-gray);
+}
+
+/* ---COMPONENTES--- */
+.btn {
+    display: inline-block;
+    border-radius: var(--br-75);
+    padding: 0.7em 1.75em;
+    background: white;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+}
+
+.btn-line {
+    color: var(--clr-primary);
+    background: transparent;
+}
+
+.btn-primary {
+    color: var(--clr-white);
+    background: var(--clr-primary);
+    font-weight: 700;
+}
+
+/* ---UTILIDADES--- */
+.pd-x2 {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* ---HEADER Y FOOTER--- */
+header, footer {
+    padding-top: 1.5em;
+    padding-bottom: 1.75em;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--clr-white);
+    overflow: hidden;
+    z-index: 1;
+}
+
+header .location {
+    float: left;
+}
+
+header .logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+header .account {
+    float: right;
+}
+
+footer {
+    background: var(--clr-black);
+    color: var(--clr-white);
+}
+
+footer .icon-sm {
+    font-size: 2rem;
+}
+
+/* ---- INDEX.HTML ---- */
+
+/* Hero Section */
+.hero {
+    height: calc(100vh - 96px);
+    background: url("./hero-four-people-eating-at-a-table.jpg") no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+.hero-txt {
+    background: var(--clr-white);
+    width: 90vw;
+    max-width: 650px;
+    padding: 1.5em 10% 2em;
+    border-radius: var(--br-75);
+}
+
+.hero-txt h1 {
+    text-align: center;
+    margin-bottom: 0.75em;
+}
+
+.hero-txt form {
+    border: 1px solid var(--clr-black);
+    background: white;
+    padding: 0.5em;
+    border-radius: var(--br-75);
+    margin-bottom: 0.5em;
+    width: fit-content;
+}
+
+.hero-txt input {
+    border: none;
+    padding: 0.5em;
+    outline: none;
+}
+
+/* Secciones */
+.wrapper-section {
+    padding-top: 3.75em;
+    padding-bottom: 2em;
+    background: var(--clr-white);
+}
+
+.wrapper-section:nth-of-type(3) {
+    background: var(--clr-light-gray);
+}
+
+.wrapper-inner {
+    padding: 0 12.5%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: var(--br-75);
+}
+
+/* About */
+
+.about {
+    min-height: 500px;
+}
+
+.about img {
+    float: right;
+    max-width: 300px;
+}
+
+.about p {
+    line-height: 2;
+    font-size: 1.15rem;
+}
+/* Cards */
+.card-wrapper {
+    width: 100%;
+}
+
+.card {
+    background: var(--clr-white);
+    border-radius: var(--br-75);
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.card-txt {
+    padding: 1.75em;
+}
+
+.card-txt p {
+    margin: 1em 0 1.25em;
+}
