@@ -25,12 +25,12 @@
     <hr>
         <main>
             <!-- Intro -->
-            <section>
+            <section class="intro">
             <h1>Phasmophobia</h1>
-            <p class="phasmoDescription sizeDescription"><strong>Phasmophobia</strong> is an indie 4 co-op psychological horror game developed by <strong><em>Kinetic
+            <p><strong>Phasmophobia</strong> is an indie 4 co-op psychological horror game developed by <strong><em>Kinetic
                 Games</em></strong>. Paranormal activity
                 is on the rise and it is up to your team to investigate and end the
-                nightmare.Experience thrilling moments of gameplay as you interact with the ghosts, spirits, and other
+                nightmare. Experience thrilling moments of gameplay as you interact with the ghosts, spirits, and other
                 paranormal phenomena.
                 Support your team by monitoring the location with CCTV cameras and motion sensors from the safety of the van,or
                 head inside and get your hands dirty with the ghostly
@@ -38,20 +38,18 @@
             </section>
     <hr>
             <!-- Video -->
-            <div  class="textCenter">
-                <div class="phasmoVideo">
-                    <h2>Preview of the game!</h2>
-                    <video src="https://cdn.akamai.steamstatic.com/steam/apps/256776660/movie480.webm?t=1583525286" controls preload="auto"></video>
-                </div>
-            </div>
+            <section class="video">
+                <h2>Preview of the game!</h2>
+                <video src="https://cdn.akamai.steamstatic.com/steam/apps/256776660/movie480.webm?t=1583525286" controls preload="auto"></video>
+            </section>
     <hr>
             <!-- Small description of a few equipments. -->
-            <section class="textCenter">
+            <section class="equipment">
                 <h2>Equipment</h2>
                 <img src="./images/computer-view.jpg" width="390">
                 <img src="./images/equipments.jpg" width="390">
                 <p>Some equipment and functions</p>
-                <ul class="cleanList">
+                <ul>
                     <li>Ouija Board - You ask questions to know more about the ghost you are hunting.</li>
                     <li>UV Flashlight - Is used to see if there are any fingerprints left by the ghost.</li>
                     <li>EMF Reader - It tells when you are close to the ghost or use it as evidence when it reaches 5.</li>
@@ -62,23 +60,22 @@
             </section>
     <hr>
             <!-- Form to subscribe. -->
-            <div class="newsForm">
+            <div>
                 <form action="database.php" method="post" enctype="text/plain">
                     <fieldset>
                         <legend>Subscribe to receive news.</legend>
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Name">
+                        <input class="formContent" type="text" id="name" name="name" placeholder="Name">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Email">
-                        <select name="age">
+                        <input class="formContent" type="email" id="email" name="email" placeholder="Email">
+                        <select class="formContent" name="age">
                             <option value="confirm">Are you 17+?</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                         </select>
-                        <input type="checkbox" name="agree" value="1">
-                        <span>I agree to terms and conditions.</span>
-                        <input type="submit" value="Send info">
-                        <input type="reset" value="Clear info">
+                        <p><input type="checkbox" name="agree" value="1">I agree to terms and conditions.</p>
+                        <input class="formBtn" type="submit" value="Send info">
+                        <input class="formBtn" type="reset" value="Clear info">
                     </fieldset>
                 </form>
             </div>
@@ -86,24 +83,22 @@
     <hr>
         <!-- Footer -->
         <footer>
-            <section class="textCenter">
-                <h2>Kinetic Games.</h2>
-                <p><strong>Kinetic Games</strong> is the company that created <strong>Phasmophobia.</strong></p>
-                <ul>
-                    <li>
-                        <a href="https://discord.gg/phasmophobia" target="_newblank"><img src="./images/ds_logo.jpg" width="32"></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/KineticGame" target="_newblank"><img src="./images/tw_logo.jpg" width="32"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UCEyR7e-25KW9-oNv_CY8CSw" target="_newblank"><img src="./images/yt_logo.jpg" width="32"></a>
-                    </li>
-                    <li>
-                        <a href="http://store.steampowered.com/app/739630/Phasmophobia" target="_newblank"><img src="./images/sm_logo.jpg" width="32"></a>
-                    </li>
-                </ul>
-            </section>
+            <h2>Kinetic Games.</h2>
+            <p><strong>Kinetic Games</strong> is the company that created <strong>Phasmophobia.</strong></p>
+            <ul>
+                <li>
+                    <a href="https://discord.gg/phasmophobia" target="_newblank"><img src="./images/ds_logo.jpg" width="32"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/KineticGame" target="_newblank"><img src="./images/tw_logo.jpg" width="32"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCEyR7e-25KW9-oNv_CY8CSw" target="_newblank"><img src="./images/yt_logo.jpg" width="32"></a>
+                </li>
+                <li>
+                    <a href="http://store.steampowered.com/app/739630/Phasmophobia" target="_newblank"><img src="./images/sm_logo.jpg" width="32"></a>
+                </li>
+            </ul>
         </footer>
     </body>
 </html>
