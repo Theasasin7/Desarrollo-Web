@@ -23,6 +23,7 @@ header {
     align-items: center;
     background: linear-gradient(to bottom, #ffffff26 0%, #00000026 100%), radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
     background-blend-mode: multiply,multiply;
+    border-bottom: 1px solid white;
 }
 
 header a {
@@ -40,9 +41,17 @@ header ul {
     list-style: none;
 }
 
+header ul li {
+    background: #5f5f5f;
+    border:1px solid #989898;
+    margin: 0 0.2rem;
+    border-radius: 0.2rem;
+}
+
 /* MAIN */
 body {
-    background-color: black;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, #ffffff66 0%, #00000040 200%);
+    background-blend-mode: multiply;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.5rem;
@@ -52,7 +61,8 @@ main h1 {
     font-family: 'October_Crow';
     font-size: 28px;
     letter-spacing: 0.5rem;
-    padding-top: 1rem;
+    padding: 1rem;
+    text-shadow: 0.1em 0.1em 0.2em #ffffff66;
 }
 
 main h1:hover {
@@ -60,9 +70,11 @@ main h1:hover {
     animation-duration: 2s;
 }
 
-main h2 {
+main h2, h3 {
     font-family: 'October_Crow';
     letter-spacing: 0.3rem;
+    padding: 1rem;
+    text-shadow: 0.1em 0.1em 0.2em #ffffff66;
 }
 
 main section {
@@ -79,6 +91,12 @@ main video {
 
 main img {
     width: 300px;
+    height: 200px;
+}
+
+main ul {
+    margin: 1rem;
+    list-style: none;
 }
 
 /* FORM */
@@ -109,6 +127,7 @@ form fieldset {
 
 .formBtn {
     margin: 0.5rem 8rem;
+    border-radius: 0.3rem;
 }
 
 /* FOOTER */
@@ -120,6 +139,7 @@ footer {
     padding-top: 1rem;
     background: linear-gradient(to bottom, #ffffff26 0%, #00000026 100%), radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
     background-blend-mode: multiply,multiply;
+    border-top: 1px solid white;
 }
 
 footer ul {
@@ -180,14 +200,14 @@ footer li {
     footer {
         grid-area: footer;
     }
-    .content {
+    .indexContent {
         display:grid;
-        grid-template-areas:"header header header"
-                            "intro intro intro"
+        grid-template-areas:"intro intro intro"
                             "video video video"
                             "equipment equipment equipment"
                             "form form form";
     }
+    
     main h1 {
         font-size: 2.5rem;
     }
@@ -198,6 +218,7 @@ footer li {
         width: 75%;
     }
     main img {
-        width: 500px;
+        width: 400px;
+        height: 200px;
     }
 }
