@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home - Phasmophobia</title><link nes rel="icon" sizes="192x192" href="./images/phasmo-title.png" /><link nes rel="icon" sizes="128x128" href="./images/phasmo-title.png"/>
         <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
 
     <body>
@@ -22,11 +23,11 @@
                 </ul>
             </nav>
         </header>
-    <hr>
-        <main>
+    
+        <main class="content">
             <!-- Intro -->
             <section class="intro">
-            <h1>Phasmophobia</h1>
+            <h1 class="animate__animated animate__heartBeat animate__slower">Phasmophobia</h1>
             <p><strong>Phasmophobia</strong> is an indie 4 co-op psychological horror game developed by <strong><em>Kinetic
                 Games</em></strong>. Paranormal activity
                 is on the rise and it is up to your team to investigate and end the
@@ -36,13 +37,13 @@
                 head inside and get your hands dirty with the ghostly
                 activity that will get increasingly hostile as time goes on.</p>
             </section>
-    <hr>
+    
             <!-- Video -->
             <section class="video">
                 <h2>Preview of the game!</h2>
                 <video src="https://cdn.akamai.steamstatic.com/steam/apps/256776660/movie480.webm?t=1583525286" controls preload="auto"></video>
             </section>
-    <hr>
+    
             <!-- Small description of a few equipments. -->
             <section class="equipment">
                 <h2>Equipment</h2>
@@ -58,9 +59,9 @@
                 <p>Either be the <em>"guy in the chair"</em> watching player placed cameras or be in the house getting your hands
                 dirty with even more equipment.</p>
             </section>
-    <hr>
+    
             <!-- Form to subscribe. -->
-            <section>
+            <section class="form">
                 <form action="database.php" method="post" enctype="text/plain">
                     <fieldset>
                         <legend>Subscribe to receive news.</legend>
@@ -73,7 +74,7 @@
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                         </select>
-                        <input type="checkbox" id="agree" name="agree" value="1"><label for="agree">I agree terms and conditions.</label>
+                        <input class="checkbox" type="checkbox" id="agree" name="agree" value="1"><label for="agree">I agree terms and conditions.</label>
                         <input class="formBtn" type="submit" value="Send info">
                         <input class="formBtn" type="reset" value="Clear info">
                     </fieldset>

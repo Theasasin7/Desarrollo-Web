@@ -21,7 +21,8 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #5f5f5f;
+    background: linear-gradient(to bottom, #ffffff26 0%, #00000026 100%), radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
+    background-blend-mode: multiply,multiply;
 }
 
 header a {
@@ -52,6 +53,11 @@ main h1 {
     font-size: 28px;
     letter-spacing: 0.5rem;
     padding-top: 1rem;
+}
+
+main h1:hover {
+    animation: heartbeat;
+    animation-duration: 2s;
 }
 
 main h2 {
@@ -92,6 +98,11 @@ form fieldset {
     background-color: #5f5f5f;
 }
 
+.checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
 .formContent {
     margin: 0.5rem 3rem;
 }
@@ -106,7 +117,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
+    padding-top: 1rem;
+    background: linear-gradient(to bottom, #ffffff26 0%, #00000026 100%), radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
+    background-blend-mode: multiply,multiply;
 }
 
 footer ul {
@@ -161,20 +174,19 @@ footer li {
     .equipment {
         grid-area: equipment;
     }
-    form {
+    .form {
         grid-area: form;
     }
     footer {
         grid-area: footer;
     }
-    main {
+    .content {
         display:grid;
         grid-template-areas:"header header header"
                             "intro intro intro"
                             "video video video"
                             "equipment equipment equipment"
-                            "form form form"
-                            "footer footer footer" ;
+                            "form form form";
     }
     main h1 {
         font-size: 2.5rem;
