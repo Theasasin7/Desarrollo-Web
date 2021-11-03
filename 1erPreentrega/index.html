@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home - Phasmophobia</title><link nes rel="icon" sizes="192x192" href="./images/phasmo-title.png" /><link nes rel="icon" sizes="128x128" href="./images/phasmo-title.png"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./CSS/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
@@ -14,7 +16,7 @@
         <header>
             <a href="./index.html"><img src="./images/phasmo-title.png"></a>
             <nav>
-                <ul>
+                <ul class="nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="ghosts.html">Ghosts</a></li>
                     <li><a href="evidence.html">Evidence</a></li>
@@ -50,36 +52,59 @@
                 <img src="./images/computer-view.jpg">
                 <img src="./images/equipments.jpg">
                 <p>Some equipment and functions</p>
-                <ul>
-                    <li>Ouija Board - You ask questions to know more about the ghost you are hunting.</li>
-                    <li>UV Flashlight - Is used to see if there are any fingerprints left by the ghost.</li>
-                    <li>EMF Reader - It tells when you are close to the ghost or use it as evidence when it reaches 5.</li>
-                    <li>Spirit Box - Used as evidence if the ghost answers back after asking a question.</li>
-                </ul>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Equipment</th>
+                                    <th scope="col">Function</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Ouija Board</th>
+                                    <td>You ask questions to know more about the ghost you are hunting.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">UV Flashlight</th>
+                                    <td>Is used to see if there are any fingerprints left by the ghost.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">EMF Reader</th>
+                                    <td>It tells when you are close to the ghost or use it as evidence when it reaches 5.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Spirit Box</th>
+                                    <td>Used as evidence if the ghost answers back after asking a question.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
                 <p>Either be the <em>"guy in the chair"</em> watching player placed cameras or be in the house getting your hands
                 dirty with even more equipment.</p>
             </section>
     
             <!-- Form to subscribe. -->
-            <section class="form">
-                <form action="database.php" method="post" enctype="text/plain">
-                    <fieldset>
-                        <legend>Subscribe to receive news.</legend>
-                        <label for="name">Name:</label>
-                        <input class="formContent" type="text" id="name" name="name" placeholder="Name">
-                        <label for="email">Email:</label>
-                        <input class="formContent" type="email" id="email" name="email" placeholder="Email">
-                        <select class="formContent" name="age">
-                            <option value="confirm">Are you 17+?</option>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                        </select>
-                        <input class="checkbox" type="checkbox" id="agree" name="agree" value="1"><label for="agree">I agree terms and conditions.</label>
-                        <input class="formBtn" type="submit" value="Send info">
-                        <input class="formBtn" type="reset" value="Clear info">
-                    </fieldset>
-                </form>
-            </section>
+            <div class="container">
+                <div class="col-md-6 offset-md-3">
+                    <form>
+                        <fieldset>
+                            <legend>Subscribe to receive news</legend>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="terms">
+                                <label class="form-check-label" for="terms">I accept terms and conditions.</label>
+                            </div>
+                            <button type="submit" class="btn btn-secondary">Submit</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </main>
     
         <!-- Footer -->

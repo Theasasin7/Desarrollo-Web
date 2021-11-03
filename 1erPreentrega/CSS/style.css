@@ -16,14 +16,14 @@
 /* HEADER */
 
 header {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background: linear-gradient(to bottom, #ffffff26 0%, #00000026 100%), radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
     background-blend-mode: multiply,multiply;
     border-bottom: 1px solid white;
+    padding: 0.5rem;
 }
 
 header a {
@@ -42,6 +42,7 @@ header ul {
 }
 
 header ul li {
+    color: white;
     background: #5f5f5f;
     border:1px solid #989898;
     margin: 0 0.2rem;
@@ -99,12 +100,17 @@ main ul {
     list-style: none;
 }
 
+.table {
+    background: linear-gradient(to bottom, #ffffff26 0%, #00000026 100%), radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    color: white;
+    letter-spacing: 0.1rem;
+    border: 1px solid white;
+}
+
 /* FORM */
 form {
-    display: flex;
-    justify-content: center;
     margin-bottom: 1rem;
-    margin-top: 1rem;
 }
 
 form fieldset {
@@ -112,22 +118,14 @@ form fieldset {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 320px;
-    background-color: #5f5f5f;
+    border: 1px solid white;
+    background: linear-gradient(to bottom, #ffffff26 0%, #00000026 100%), radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
+    background-blend-mode: multiply,multiply;
 }
 
-.checkbox {
-    display: flex;
-    flex-direction: row;
-}
-
-.formContent {
-    margin: 0.5rem 3rem;
-}
-
-.formBtn {
-    margin: 0.5rem 8rem;
-    border-radius: 0.3rem;
+form legend {
+    text-align: center;
+    margin: 1rem;
 }
 
 /* FOOTER */
@@ -170,10 +168,6 @@ footer li {
     main p {
         margin: 0 1rem;
     }
-    form {
-        display: flex;
-        justify-content: center;
-    }
 }
 
 /* LARGE DEVICES */
@@ -194,7 +188,7 @@ footer li {
     .equipment {
         grid-area: equipment;
     }
-    .form {
+    .container {
         grid-area: form;
     }
     footer {
