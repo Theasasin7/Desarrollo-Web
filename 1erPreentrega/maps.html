@@ -35,10 +35,44 @@
     <!-- Maps -->
             <section>
                 <h2>Maps</h2>
-                <img src="./images/maps.jpg"> 
-                <img src="./images/modern.jpg">
-                <img src="./images/cabin.png">
-                <img src="./images/school.png">
+                <div class="col-md-8 mx-md-auto col-lg-5 mx-lg-auto">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/maps.jpg" class="d-block w-100 imgCarousel" alt="Maps">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/modern.jpg" class="d-block w-100 imgCarousel" alt="Modern House">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/cabin.png" class="d-block w-100 imgCarousel" alt="Cabin">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/school.png" class="d-block w-100 imgCarousel" alt="School">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
                 <p class="sizeDescription">Maps are the locations you will investigate while completing Contracts. Each map features at minimum 1 Exit Door, 1
                 Video Camera, and 3 Sinks. Each Location is accessible after collecting and using the Main Door Key. There are 3 different sizes of maps.</p>
             </section>

@@ -100,6 +100,10 @@ main ul {
     list-style: none;
 }
 
+.imgCarousel {
+    height: 300px;
+}
+
 .table {
     background: linear-gradient(to bottom, #ffffff26 0%, #00000026 100%), radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
     background-blend-mode: multiply,multiply;
