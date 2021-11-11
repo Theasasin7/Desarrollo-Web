@@ -1,102 +1,222 @@
+/* FONT TITLE */
+
 @font-face {
     font-family: "October_Crow";
     src: url(October_Crow.ttf) format("truetype");
 }
 
+/* MOBILE FIRST */
+
 * {
     margin: 0;
     padding: 0;
-    color: inherit;
-    list-style: none;
-    text-decoration: none;
     box-sizing: border-box;
 }
 
-/*Lists-------------------------------------------------------------------------------------*/
-.cleanList {
-    text-decoration: none;
-    list-style: none;
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #ffffff26 0%, #00000026 100%), radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    border-bottom: 1px solid white;
+    padding: 0.5rem;
 }
 
-/*Header------------------------------------------------------------------------------------*/
-header{
-    background: #808080;
-}
-
-header ul a{
-    color: #f7f7f7ec;
-    background-color: #808080;
-    font-size: 24px;
-}
-
-header ul li {
+header a {
+    padding: 5px;
     display: inline-block;
-}
-
-.menu {
-    text-align: right;
-}
-
-/*Body--------------------------------------------------------------------------------------*/
-body {
-    background-color: black;
-    color: #f7f7f7ec;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.phasmoIntro {
-    background-color: #808080;
-    padding: 5px;
-    margin: 5px;
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
 }
 
-.phasmoDescription {
-    text-align: center;
-    line-height: 25px;
+header ul li {
+    color: white;
+    background: #5f5f5f;
+    border:1px solid #989898;
+    margin: 0 0.2rem;
+    border-radius: 0.2rem;
 }
 
-body p{
-    color: #f7f7f7ec;
+/* MAIN */
+body {
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, #ffffff66 0%, #00000040 200%);
+    background-blend-mode: multiply;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5rem;
 }
 
-/*Video-------------------------------------------------------------------------------------*/
-.phasmoVideo {
-    width: 860px;
-    background-color: #808080;
-}
-
-/*Title-------------------------------------------------------------------------------------*/
-.phasmoFont {
+main h1 {
     font-family: 'October_Crow';
-    color: #ffffff;
-    font-size: 40px;
-    letter-spacing: 30px;
+    font-size: 28px;
+    letter-spacing: 0.5rem;
+    padding: 1rem;
+    text-shadow: 0.1em 0.1em 0.2em #ffffff66;
+}
+
+main h1:hover {
+    animation: heartbeat;
+    animation-duration: 2s;
+}
+
+main h2, h3 {
+    font-family: 'October_Crow';
+    letter-spacing: 0.3rem;
+    padding: 1rem;
+    text-shadow: 0.1em 0.1em 0.2em #ffffff66;
+}
+
+main section {
     text-align: center;
 }
 
-/*Table of description of equipments--------------------------------------------------------*/
-table tr th{
-    background-color: #808080;
-    color: #f7f7f7ec;
+main p {
+    padding: 1rem;
 }
 
-table tr td {
-    background-color: #969494;
-    color: #f7f7f7ec;
+main video {
+    width: 320px;
 }
 
-/*Form----------------------------------------------------------------------------------*/
-form {
-    background-color: #808080;
-    color: #f7f7f7ec;
-}
-
-.newsForm {
+main img {
     width: 300px;
-    text-align: center;
+    height: 200px;
 }
 
-/*Text align----------------------------------------------------------------------------*/
-.textCenter {
+main ul {
+    margin: 1rem;
+    list-style: none;
+}
+
+.imgCarousel {
+    height: 300px;
+}
+
+.table {
+    background: linear-gradient(to bottom, #ffffff26 0%, #00000026 100%), radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    color: white;
+    letter-spacing: 0.1rem;
+    border: 1px solid white;
+}
+
+/* FORM */
+form {
+    margin-bottom: 1rem;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    background: linear-gradient(to bottom, #ffffff26 0%, #00000026 100%), radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
+    background-blend-mode: multiply,multiply;
+}
+
+form legend {
     text-align: center;
+    margin: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    background: linear-gradient(to bottom, #ffffff26 0%, #00000026 100%), radial-gradient(at top center, #ffffff66 0%, #00000066 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    border-top: 1px solid white;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+footer li {
+    margin: 10px;
+}
+
+/* RESPONSIVE */
+/* MEDIUM DEVICES */
+
+@media (min-width: 768px){
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header a {
+        font-size: 1.2rem;
+    }
+    main video {
+        width: 700px;
+    }
+    main p {
+        margin: 0 1rem;
+    }
+}
+
+/* LARGE DEVICES */
+
+@media (min-width: 1024px){
+    header a {
+        font-size: 1.5rem;
+    }
+    header {
+        grid-area: header;
+    }
+    .intro {
+        grid-area: intro;
+    }
+    .video {
+        grid-area: video;
+    }
+    .equipment {
+        grid-area: equipment;
+    }
+    .container {
+        grid-area: form;
+    }
+    footer {
+        grid-area: footer;
+    }
+    .indexContent {
+        display:grid;
+        grid-template-areas:"intro intro intro"
+                            "video video video"
+                            "equipment equipment equipment"
+                            "form form form";
+    }
+    
+    main h1 {
+        font-size: 2.5rem;
+    }
+    main p {
+        margin: 0 5rem;
+    }
+    main video {
+        width: 75%;
+    }
+    main img {
+        width: 400px;
+        height: 200px;
+    }
 }

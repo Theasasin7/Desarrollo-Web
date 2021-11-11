@@ -1,0 +1,49 @@
+@media (min-width: 768px){
+    body {
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            a {
+                font-size: 1rem;
+            }
+        }
+        main {
+            .video__width {
+                width: 700px;
+            }
+            section {
+                p {
+                    margin: 0 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    body {
+        header {
+            a {
+                font-size: 1.2rem;
+            }
+        }
+        main {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .intro {
+                &__text {
+                    margin: 0 5rem;
+                }
+            }
+            .video__width {
+                width: 800px;
+            }
+            .equipment__image {
+                width: 400px;
+                height: 200px;
+            }
+        }
+    }
+}

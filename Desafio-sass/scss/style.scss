@@ -1,0 +1,103 @@
+@import "reset";
+@import "fonts";
+@import "colors";
+@import "query";
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 0.2rem;
+    a {
+        padding: 5px;
+        display: inline-block;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        li {
+            border:1px solid #989898;
+            margin: 0 0.2rem;
+            border-radius: 0.2rem;
+        }
+    }
+}
+
+main {
+    h1 {
+        padding: 1rem;
+    }
+    h1:hover {
+        animation: heartbeat;
+        animation-duration: 2s;
+    }
+    h2, h3 {
+        padding: 1rem;
+    }
+    .intro {
+        text-align: center;
+        &__text {
+            padding: 1rem;
+        }
+    }
+    .video {
+        text-align: center;
+        &__width {
+            width: 320px;
+        }
+    }
+    .equipment {
+        text-align: center;
+        &__image {
+            width: 300px;
+            height: 200px;
+        }
+        &__text{
+            text-align: center;
+        }
+    }
+    
+    .table {
+        border: 1px solid white;
+    }
+    form {
+        margin-bottom: 1rem;
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+                legend {
+                text-align: center;
+                margin: 1rem;
+            }
+            .btn {
+                &__style {
+                    border: 3px outset white;
+                    margin-bottom: 0.5rem;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid white;
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        li {
+            margin: 10px;
+        }
+    }
+}
