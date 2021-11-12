@@ -49,14 +49,23 @@ main {
             width: 320px;
         }
     }
-    .equipment {
+    .content {
         text-align: center;
         &__image {
             width: 300px;
             height: 200px;
+            margin-bottom: 1rem;
         }
-        &__text{
+        &__text {
             text-align: center;
+            padding: 1rem 0;
+        }
+        &__ulist {
+            list-style: none;
+        }
+        &__olist {
+            width: 15rem;
+            margin: 1rem auto;
         }
     }
     
