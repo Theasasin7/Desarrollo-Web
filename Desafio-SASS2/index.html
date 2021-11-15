@@ -11,19 +11,30 @@
 
     <body>
         <!-- Header -->
-        <header>
-            <a href="./index.html"><img src="./images/phasmo-title.png"></a>
-            <nav>
-                <ul class="nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="ghosts.html">Ghosts</a></li>
-                    <li><a href="evidence.html">Evidence</a></li>
-                    <li><a href="equipment.html">Equipment</a></li>
-                    <li><a href="maps.html">Maps</a></li>
-                </ul>
-            </nav>
-        </header>
-    
+        <header class="navbar navbar-expand-md navbar-dark sticky-top">
+			<a href="index.html"><img class="nav__image" src="./images/phasmo-title.png" alt="Phasmophobia Logo" /></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-lg-0 justify-content-end">
+					<li class="nav-item">
+						<a class="nav-link text-decoration-underline" href="./index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="ghosts.html">Ghosts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="evidence.html">Evidence</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="equipment.html">Equipments</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="maps.html">Maps</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
         <main>
             <!-- Intro -->
             <section class="intro">
@@ -98,7 +109,7 @@
                                 <input type="checkbox" class="form-check-input" id="terms">
                                 <label class="form-check-label" for="terms">I accept terms and conditions.</label>
                             </div>
-                            <button type="submit" class="btn btn__style">Submit</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </fieldset>
                     </form>
                 </div>
