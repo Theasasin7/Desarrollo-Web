@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.84">
+<url>
+<loc>https://www.mipagina.com.ar/index.html</loc>
+<lastmod>2021-08-26</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://www.mipagina.com.ar/como-comprar.html</loc>
+<lastmod>2021-08-26</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.mipagina.com.ar/la-empresa.html</loc>
+<lastmod>2021-08-26</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.mipagina.com.ar/servicios.html</loc>
+<lastmod>2021-08-26</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+</urlset>
